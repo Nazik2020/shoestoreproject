@@ -1,0 +1,383 @@
+* {
+  padding: 10;
+  margin: 10;
+  box-sizing: border-box;
+}
+
+/* navbar */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: white;
+
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-img {
+  height: 140px;
+}
+
+/* search styles */
+/*.search-container {
+  flex: 1;
+}
+*/
+.search-container a {
+  color: grey;
+}
+
+/* links */
+.links {
+  display: flex;
+
+  align-items: center;
+  list-style: none;
+}
+
+.links li {
+  position: relative;
+  padding: 8px 0;
+}
+.links li:hover {
+  background-color: #f0f0f0;
+}
+.links li a:hover {
+  color: #000;
+}
+
+.sub-category {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+  list-style: none;
+  width: 200px;
+  box-shadow: 5px 7px 8px #22222278;
+}
+
+.sub-category li {
+  padding: 10px 10px !important;
+}
+.sub-category li a {
+  color: grey !important;
+  padding: 10px 10px !important;
+}
+.sub-category li a:hover {
+  color: #000 !important;
+}
+.sub-category li:hover {
+  background-color: #f0f0f0;
+}
+
+.links li a:hover + .sub-category,
+.sub-category:hover {
+  display: block;
+}
+
+.links li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.links li ul li a {
+  color: black;
+}
+
+.shop-now {
+  display: flex;
+
+  gap: 30px;
+}
+
+.cartBtn,
+.loginBtn {
+  background: none;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 40px;
+  color: gray;
+}
+
+.cartBtn:hover {
+  color: black;
+}
+
+.loginBtn:hover {
+  color: black;
+}
+
+.mini-sub {
+  position: absolute;
+  right: -95px;
+  top: 0;
+  background-color: #fff;
+
+  display: none;
+}
+
+.mini-sub li {
+  color: blue;
+}
+
+.sub-category li {
+  list-style: none;
+}
+
+.sub-category li:hover .mini-sub {
+  display: block;
+}
+
+.search-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 6px;
+  border-radius: 100px;
+  border: 2px solid gray;
+}
+
+.search-container .searchbar {
+  flex: 1;
+  outline: none;
+  border: 0;
+}
+
+hr {
+  color: 1px aliceblue;
+}
+
+.head {
+  text-align: center;
+  background-color:/* #f2f2f2 gray*/ #e6ffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  column-gap: 50px;
+  text-align: 0;
+  /* background-image: url(spik_.jpg) */
+
+  /* background-color:; */
+}
+
+.itemx {
+  display: grid;
+  grid-area: 100px 100px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  margin-left: 75px;
+  margin-top: 75px;
+  transform: perspective(10px);
+}
+
+.button1 {
+  border: 2px solid black;
+  background-color: rgb(233, 226, 226);
+  color: black;
+  border-radius: 10px;
+  width: 180px;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-color: gray;
+  color: rgb(236, 229, 229);
+}
+
+.button1:hover {
+  background-color: gray;
+  color: rgb(237, 218, 218);
+  transform: translate(10px);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.add {
+  display: grid;
+  grid-area: 100px 100px;
+ 
+  animation: changeColors 10s infinite alternate;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius:50px;
+}
+@keyframes changeColors {
+  0% {
+    /*
+    background-image: url(spik_.jpg)*/
+    background-color:  #ffffcc;
+  }
+  50% {
+    /*
+    background-image: url(tomk.jpg);*/background-color:#ffe6ff;
+  }
+  100% {
+    /*
+    background-image: url(wi_.jpg);*/background-color: #ccffff;
+  }
+}
+.addshoe {
+  align-items: center;
+}
+.adltr {
+  color: rgb(10, 10, 10);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Poiret+One&family=Quicksand:wght@300..700&family=Rakkas&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Footer*/
+
+footer {
+  background: radial-gradient(rgb(184, 184, 184), #acacac);
+  padding: 20px;
+}
+
+.head {
+  text-align: center;
+  font-family: Titillium Web;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.head h1 {
+  font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
+}
+
+.hd {
+  text-align: center;
+  /* font-family: Titillium Web; */
+  margin-bottom: 10px;
+}
+
+.hd p {
+  font-family: Titillium Web;
+}
+
+.mail {
+  font-family: Quicksand;
+  text-align: center;
+}
+
+.box {
+  padding: 5px;
+  font-family: Quicksand;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 200px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.big {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 40px 10px 40px;
+}
+
+.list {
+  padding: 18px;
+}
+
+.ft,
+.bt {
+  list-style-type: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+}
+
+.ft li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.ft li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.high {
+  font-family: Titillium Web;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.bottom {
+  justify-content: center;
+}
+
+.bt {
+  text-align: center;
+  border-radius: 30px;
+  width: 400px;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  margin: 0 auto;
+}
+
+.bt li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bt span {
+  padding: 6px;
+}
+
+.bt img:hover {
+  transform: scale(125%);
+}
+
+#line {
+  margin-top: 20px;
+  border-left: 3px solid white;
+  height: 150px;
+}
+
+.right {
+  text-align: center;
+  padding: 20px;
+  font-family: Ruda;
+}
+
+.list {
+  text-align: left;
+}
+
+.high {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
